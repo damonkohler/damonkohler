@@ -12,4 +12,5 @@ toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 myConfig = defaultConfig { terminal = "gnome-terminal" }
         `removeKeysP` ["M-S-j", "M-S-r"]
+        `additionalKeysP` [("M-S-l", spawn "gnome-screensaver-command -l")]
 
